@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <title>jeremy jodi's portfolio - into the holoverse</title>
+    <meta name="description" content="about into the holoverse" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <link rel="stylesheet" href="../../tabs.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+      body {
+        background-color: #172733;
+        font-family: Quicksand, sans-serif;
+        margin: 0;
+        width: 100%;
+      }
+
+      section {
+        min-height: 90%;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      footer {
+        margin: 0px;
+        margin-top: 50px;
+        padding: 30px 30px 10px 30px;
+        width: 100%;
+        height: auto;
+        background-color: #10181f;
+        display: flex;
+        box-sizing: border-box;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .p-yellow {
+        color: #d0c19c;
+      }
+
+      .p-white {
+        color: #fffffe;
+      }
+
+      .p-mid {
+        text-align: center;
+      }
+
+      .footer-left {
+        display: block;
+        width: 40%;
+        text-align: left;
+      }
+
+      .footer-right {
+        display: inline-block;
+        width: 40%;
+        text-align: right;
+      }
+
+      .footer-middle {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+      }
+
+      .jwt-h1 {
+        color: #d0c19c;
+        font-size: 72px;
+        font-weight: 700;
+
+        text-align: center;
+      }
+
+      .jwt-h2 {
+        color: #d0c19c;
+        font-size: 42px;
+        font-family: Quicksand;
+        font-weight: 300;
+        text-align: center;
+        margin-top: -60px;
+        width: 100%;
+      }
+
+      .jwt-h3 {
+        font-size: 42px;
+        font-family: Quicksand;
+        font-weight: 300;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+      }
+
+      .center {
+        display: block;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+      }
+
+      iframe {
+        position: fixed;
+        top: 10;
+        right: 10;
+
+        border-radius: 8px;
+        box-shadow: 0 4px 16px 0 #10181f;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="jwt-h1 p-white">into the holoverse 2</h1>
+        <h2 class="jwt-h2">fangame, game design, programming</h2>
+        <p class="p-white p-mid">
+          into the holoverse 2 is a prototype of
+          <a href="../IntoTheHoloverse/details.html"> into the holoverse's </a>
+          revamped combat system hololive. developed in 2023.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="jwt-h1 p-yellow">thoughts</h1>
+        <p class="p-yellow center">
+          this combat prototype was developed based on the feedback and rigorous
+          testing of the first game. mainly i'll explain my personal thoughts on
+          what this prototype improved over the original idea.
+        </p>
+        <div style="margin: 30px 10svw;">
+          <img src="ith2_ss1.png" class="center">
+          <h2 class="p-yellow">action point system</h2>
+          <p class="p-white">
+            The initial game-changing update involved a significant alteration
+            to the action points system. The cap was lowered from 10 to 5, and
+            skill costs were reconfigured to be either 0 (for basic attacks) or
+            1 for any other skill. In the first version of ITH, players tended
+            to stockpile APs to unleash high-cost skills of 7 or more, often
+            neglecting medium-cost skills altogether. In essence, they relied
+            heavily on the initial 0/1 cost skill until their primary DPS
+            character executed a 7~10 cost skill. This created a suboptimal
+            design scenario where other skills were overlooked, and teams were
+            structured to exploit the availability of free skills.
+          </p>
+          <p class="p-white">
+            By revamping the skills to consistently cost 1 AP (excluding basic
+            attacks), players are now incentivized to utilize their AP pool more
+            effectively, encouraging them to employ the skills of all characters
+            in their team. This adjustment has significantly enhanced the
+            influence of support-oriented characters.
+          </p>
+          <h2 class="p-yellow">rotation system</h2>
+          <p class="p-white">
+            The second most significant alteration entails the abandonment of the rotational combat system. Instead, units are now arranged horizontally, facing off against each other. In the previous rotational setup, players strategically positioned units for favorable matchups and efficient skill targeting. However, when an enemy unit was eliminated, the rotation transitioned from 4 characters per round to 3, disrupting the established matchups and shifting the battle from strategic to chaotic. In the updated format, characters have the ability to swap positions prior to executing their skills, adding a substantial layer of strategy.
+            </p>
+
+          <p class="p-white">
+            In tandem with the positional changes, the mechanics of skill targeting have undergone a comprehensive revamp. A new facet of skill targeting is range, which dictates how far a skill can reach. A range of 1 implies a unit directly in front of the caster, while a range of 5 spans five units' distance. The interplay of range and positional swapping grants players a deeper well of strategic options.
+          </p>
+
+          <p class="p-white">
+            Another alteration to the combat system involves the adjustment of turn order. Previously, the sequence of turns was contingent on the rotation of characters, with a few exceptions where certain skills could impede rotation. In the updated format, a speed attribute is introduced, influencing how swiftly characters can take action. This inclusion of speed and a dynamic turn order facilitates the creation of a broader range of skills and fosters enhanced character synergy.
+          </p>
+
+          <h2 class="p-yellow">ultimates</h2>
+          <p class="p-white">
+            Ultimates are a new addition to ITH. Characters can build up energy to unleash powerful skills regardless of their turn order. Diferent ultimates have different effects and energy costs. Some ultimates, such as a well timed team shield, could single handedly turn the tables in an unfavorable match.
+            </p>
+
+            <img src="ith2_ss2.png" class="center">
+
+            <h2 class="p-yellow">weakness</h2>
+          <p class="p-white">
+            Elemental weakness was also reworked for ITH 2. Instead of relying on the traditional rock paper scissor like elemental advantages, enemies were given multiple weaknesses. This allows the creation of more dynamic teams rather than finding meta units for each element.
+            </p>
+          
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <iframe
+      frameborder="0"
+      src="https://itch.io/embed/2035620?border_width=0&amp;bg_color=172733&amp;fg_color=d0c19c&amp;link_color=4d3645&amp;border_color=172733"
+      width="550"
+      height="165"
+      ><a href="https://justwastingtime.itch.io/hologo2"
+        >HoloGO 2 Combat Prototype by JustWastingTime</a
+      ></iframe
+    >
+
+    <footer>
+      <p class="p-white footer-left"><b>jeremyjodi168@gmail.com </b></p>
+      <p class="p-white footer-middle">
+        <a href="../../index.html"
+          ><img src="../../icon_home.png" width="25px"
+        /></a>
+      </p>
+      <p class="p-white footer-right">
+        <b>&#169; Jeremy Jodi 2023. All rights reserved.</b>
+      </p>
+    </footer>
+  </body>
+</html>
