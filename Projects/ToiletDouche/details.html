@@ -1,0 +1,477 @@
+<html>
+  <head>
+    <title>jeremy jodi's portfolio - toilet douche</title>
+    <meta name="description" content="about toilet douche" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+      body {
+        background-color: #31b8d6;
+        font-family: Quicksand, sans-serif;
+        margin: 0;
+        width: 100%;
+      }
+
+      section {
+        min-height: 90%;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      footer {
+        margin: 0px;
+        margin-top: 50px;
+        padding: 30px 30px 10px 30px;
+        width: 100%;
+        height: auto;
+        background-color: #3193a9;
+        display: flex;
+        box-sizing: border-box;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .p-red {
+        color: #712624;
+      }
+
+      .p-white {
+        color: #fffffe;
+      }
+
+      .p-mid {
+        text-align: center;
+      }
+
+      .footer-left {
+        display: block;
+        width: 40%;
+        text-align: left;
+      }
+
+      .footer-right {
+        display: inline-block;
+        width: 40%;
+        text-align: right;
+      }
+
+      .footer-middle {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+      }
+
+      .jwt-h1 {
+        color: #fffffe;
+        font-size: 72px;
+        font-weight: 700;
+
+        text-align: center;
+      }
+
+      .jwt-h2 {
+        color: #712624;
+        font-size: 42px;
+        font-family: Quicksand;
+        font-weight: 300;
+        text-align: center;
+        margin-top: -60px;
+        width: 100%;
+      }
+
+      .jwt-h3 {
+        font-size: 42px;
+        font-family: Quicksand;
+        font-weight: 300;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+      }
+
+      .center {
+        display: block;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+      }
+
+      iframe {
+        position: fixed;
+        top: 10;
+        right: 10;
+
+        border-radius: 8px;
+        box-shadow: 0 4px 16px 0 #10181f;
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+      }
+
+      .toilet-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .toilet {
+        width: 250px;
+        height: 450px;
+        margin: 10px 20px;
+        padding: 20px 20px;
+        position: relative;
+      }
+
+      .unused {
+        display: block;
+      }
+
+      .wrong {
+        display: none;
+      }
+
+      .correct {
+        display: none;
+      }
+
+      .toilet:hover .wrong {
+        display: block;
+      }
+
+      .toilet:hover .correct {
+        display: block;
+      }
+      .toilet:hover .unused {
+        display: none;
+      }
+
+      .toilet-row-special1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .toilet-row-special1 * .wrong
+      {
+        display: none;
+      } 
+
+      .toilet-row-special2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .toilet-row-special2 * .wrong
+      {
+        display: none;
+      } 
+
+      .toilet-special {
+        width: 250px;
+        height: 450px;
+        margin: 10px 20px;
+        padding: 20px 20px;
+        position: relative;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="jwt-h1 p-white">toilet douche</h1>
+        <h2 class="jwt-h2">game design, programming, android</h2>
+        <p class="p-white p-mid">
+          toilet douche is a hypercasual game about the secret rule of men's
+          urinals. developed in 2017.
+        </p>
+        <div class="center" style="margin-top: 10svh">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.JustWastingTime.ToiletDouche&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+            target="_blank"
+            ><img
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              width="300px"
+          /></a>
+          <p class="p-white">note: if above button leads to nowhere, game is still delisted due to target level and policy issues.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h1 class="jwt-h1 p-yellow">rules (hover the urinals)</h1>
+        <h2 class="p-white center">
+          everyone knows you need to keep distance when using a urinal. its a universal law!
+        </h2>
+        <div class="toilet-row">
+            <div class="toilet">
+              <img src="urinal_used.png" width="250" class="used" />
+            </div>
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_wrong.png" width="250" class="wrong" />
+            </div>
+  
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_correct.png" width="250" class="correct" />
+            </div>
+          </div>
+          <h2 class="p-white center">
+            but what happens when you enter a restroom and see this!?!?
+          </h2>
+        <div class="toilet-row">
+          <div class="toilet">
+            <img src="urinal.png" width="250" class="unused" />
+            <img src="urinal_wrong.png" width="250" class="wrong" />
+          </div>
+          <div class="toilet">
+            <img src="urinal_used.png" width="250" class="used" />
+          </div>
+          <div class="toilet">
+            <img src="urinal.png" width="250" class="unused" />
+            <img src="urinal_wrong.png" width="250" class="wrong" />
+          </div>
+        </div>
+        
+
+        <h2 class="p-white center">
+          wow! what a douche! why'd he take the middle urinal?
+        </h2>
+
+        <h2 class="p-white center">
+            now what if theres 5 urinals?
+        </h2>
+
+        <div class="toilet-row">
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_wrong.png" width="250" class="wrong" />
+            </div>
+            <div class="toilet">
+              <img src="urinal_used.png" width="250" class="used" />
+            </div>
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_wrong.png" width="250" class="wrong" />
+            </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+              <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+          </div>
+
+          <div class="toilet-row">
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_correct.png" width="250" class="correct" />
+            </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_wrong.png" width="250" class="wrong" />
+              </div>
+            <div class="toilet">
+              <img src="urinal_used.png" width="250" class="used" />
+            </div>
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_wrong.png" width="250" class="wrong" />
+            </div>
+
+              <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+          </div>
+
+          <div class="toilet-row">
+            <div class="toilet">
+              <img src="urinal.png" width="250" class="unused" />
+              <img src="urinal_correct.png" width="250" class="correct" />
+            </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+              <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_wrong.png" width="250" class="wrong" />
+              </div>
+            <div class="toilet">
+              <img src="urinal_used.png" width="250" class="used" />
+            </div>
+          </div>
+
+          <h2 class="p-white center">
+            now what if you're the DOUCHE? prevent another person from using the urinals as well!
+        </h2>
+
+        <div class="toilet-row-special1">
+            <div class="toilet-special" onmouseover="toilet11Hover()" onmouseout="toilet1Unhover()">
+              <img src="urinal.png" width="250" id="toiletspecial11-wrongPlayerUnused" class="unused" />
+              <img src="urinal_wrong_npc.png" width="250" id="toiletspecial11-wrongNPC" class="wrong"/>
+              <img src="urinal_wrong_player.png" width="250" id="toiletspecial11-wrongPlayer" class="wrong"/>
+            </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+              <div class="toilet-special" onmouseover="toilet13Hover()" onmouseout="toilet1Unhover()">
+                <img src="urinal.png" width="250" id="toiletspecial13-wrongPlayerUnused" class="unused" />
+                <img src="urinal_wrong_npc.png" width="250" id="toiletspecial13-wrongNPC" class="wrong"/>
+                <img src="urinal_wrong_player.png" width="250" id="toiletspecial13-wrongPlayer" class="wrong"/>
+              </div>
+            <div class="toilet" >
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_wrong.png" width="250" class="wrong" />
+              </div>
+            <div class="toilet">
+              <img src="urinal_used.png" width="250" class="used" />
+            </div>
+          </div>
+
+          <div class="toilet-row-special2">
+            <div class="toilet">
+                <img src="urinal_used.png" width="250" class="used" />
+              </div>
+              <div class="toilet" >
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_wrong.png" width="250" class="wrong" />
+              </div>
+            <div class="toilet-special" onmouseover="toilet23Hover()" onmouseout="toilet2Unhover()">
+              <img src="urinal.png" width="250" id="toiletspecial23-wrongPlayerUnused" class="unused" />
+              <img src="urinal_wrong_npc.png" width="250" id="toiletspecial23-wrongNPC" class="wrong"/>
+              <img src="urinal_wrong_player.png" width="250" id="toiletspecial23-wrongPlayer" class="wrong"/>
+            </div>
+            <div class="toilet">
+                <img src="urinal.png" width="250" class="unused" />
+                <img src="urinal_correct.png" width="250" class="correct" />
+              </div>
+              <div class="toilet-special" onmouseover="toilet25Hover()" onmouseout="toilet2Unhover()">
+                <img src="urinal.png" width="250" id="toiletspecial25-wrongPlayerUnused" class="unused" />
+                <img src="urinal_wrong_npc.png" width="250" id="toiletspecial25-wrongNPC" class="wrong"/>
+                <img src="urinal_wrong_player.png" width="250" id="toiletspecial25-wrongPlayer" class="wrong"/>
+              </div>
+            
+            
+          </div>
+          <h2 class="p-white center">
+            that's it! you've learnt to be a douche. toilet douche!
+        </h2>
+
+        <h2 class="p-white center">
+            tldr. dont pee beside another, dont let a person have a free urinal!
+        </h2>
+      </div>
+    </section>
+
+    <footer>
+      <p class="p-white footer-left"><b>jeremyjodi168@gmail.com </b></p>
+      <p class="p-white footer-middle">
+        <a href="../../index.html"
+          ><img src="../../icon_home.png" width="25px"
+        /></a>
+      </p>
+      <p class="p-white footer-right">
+        <b>&#169; Jeremy Jodi 2023. All rights reserved.</b>
+      </p>
+    </footer>
+  </body>
+  <script>
+    var toiletspecial11wrongPlayerUnused = document.getElementById("toiletspecial11-wrongPlayerUnused");
+    var toiletspecial11wrongPlayer = document.getElementById("toiletspecial11-wrongPlayer");
+    var toiletspecial11wrongNPC = document.getElementById("toiletspecial11-wrongNPC");
+
+    var toiletspecial13wrongPlayerUnused = document.getElementById("toiletspecial13-wrongPlayerUnused");
+    var toiletspecial13wrongPlayer = document.getElementById("toiletspecial13-wrongPlayer");
+    var toiletspecial13wrongNPC = document.getElementById("toiletspecial13-wrongNPC");
+
+    var toiletspecial23wrongPlayerUnused = document.getElementById("toiletspecial23-wrongPlayerUnused");
+    var toiletspecial23wrongPlayer = document.getElementById("toiletspecial23-wrongPlayer");
+    var toiletspecial23wrongNPC = document.getElementById("toiletspecial23-wrongNPC");
+
+    var toiletspecial25wrongPlayerUnused = document.getElementById("toiletspecial25-wrongPlayerUnused");
+    var toiletspecial25wrongPlayer = document.getElementById("toiletspecial25-wrongPlayer");
+    var toiletspecial25wrongNPC = document.getElementById("toiletspecial25-wrongNPC");
+
+    function toilet1Unhover()
+    {
+        toiletspecial11wrongPlayerUnused.style.display = "block";
+        toiletspecial13wrongPlayerUnused.style.display = "block";
+
+        toiletspecial11wrongPlayer.style.display = "none";
+        toiletspecial13wrongPlayer.style.display = "none";
+        toiletspecial11wrongNPC.style.display = "none";
+        toiletspecial13wrongNPC.style.display = "none";
+    }
+    function toilet11Hover()
+    {
+        toiletspecial11wrongPlayer.style.display = "block";
+        toiletspecial11wrongPlayerUnused.style.display = "none";
+
+        toiletspecial13wrongNPC.style.display = "block";
+        toiletspecial13wrongPlayerUnused.style.display = "none";
+    }
+    function toilet13Hover()
+    {
+        toiletspecial13wrongPlayer.style.display = "block";
+        toiletspecial13wrongPlayerUnused.style.display = "none";
+
+        toiletspecial11wrongNPC.style.display = "block";
+        toiletspecial11wrongPlayerUnused.style.display = "none";
+    }
+
+    function toilet2Unhover()
+    {
+        toiletspecial23wrongPlayerUnused.style.display = "block";
+        toiletspecial25wrongPlayerUnused.style.display = "block";
+
+        toiletspecial23wrongPlayer.style.display = "none";
+        toiletspecial25wrongPlayer.style.display = "none";
+        toiletspecial23wrongNPC.style.display = "none";
+        toiletspecial25wrongNPC.style.display = "none";
+    }
+    function toilet23Hover()
+    {
+        toiletspecial23wrongPlayer.style.display = "block";
+        toiletspecial23wrongPlayerUnused.style.display = "none";
+
+        toiletspecial25wrongNPC.style.display = "block";
+        toiletspecial25wrongPlayerUnused.style.display = "none";
+    }
+    function toilet25Hover()
+    {
+        toiletspecial25wrongPlayer.style.display = "block";
+        toiletspecial25wrongPlayerUnused.style.display = "none";
+
+        toiletspecial23wrongNPC.style.display = "block";
+        toiletspecial23wrongPlayerUnused.style.display = "none";
+    }
+  </script>
+</html>
