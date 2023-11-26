@@ -43,6 +43,23 @@ body
 {
     color: var(--light);
 }
+.chaos
+{
+    color: var(--chaos);
+}
+.water
+{
+    color: var(--water);
+}
+.fire
+{
+    color: var(--fire);
+}
+.grass
+{
+    color: var(--grass);
+}
+
 
 /* Flex */
 .flex-row
@@ -269,3 +286,67 @@ body
     height: 100%;
 }
 
+/* Characters Page */
+.character-box
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: var(--primaryweaker);
+    border: 10px solid var(--white);
+    border-radius: 25px;
+    margin: 8px;
+}
+
+.character-box:hover
+{
+    background-color: var(--primaryweakest);
+    cursor: pointer;
+    border: 10px solid var(--primary);
+    transition: 0.3s;
+}
+
+.character-box-picture
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 25px;
+}
+
+.image-bottomtext
+{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 8px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.image-topleftelement
+{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.image-toprightrarity
+{
+    background-color: var(--primary);
+    padding: 1px 10px;
+    border-radius: 15px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--white);
+}
+
+.character-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
