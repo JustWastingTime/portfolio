@@ -221,10 +221,10 @@ body
 /* Others */
 .profilepicture
 {
-    height: 200px;
-    width: 200px;
-    max-height: 15svh;
-    max-width: 15svw;
+    max-height: 200px;
+    max-width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     object-position: 0 0;
     background-color: var(--primaryweaker);
