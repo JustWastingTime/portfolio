@@ -1,0 +1,271 @@
+:root
+{
+    --primary: #44283C;
+    --primaryweak: #573e50;
+    --primaryweaker: #695363;
+    --primaryweakest: #a2949e;
+    --white: #ffffec;
+
+    --light: #ffc34a;
+    --chaos: #997da4;
+    --grass: #94be77;
+    --water: #5fd5ee;
+    --fire: #d95763;
+}
+
+body
+{
+    background-color: var(--primaryweak);
+}
+
+/* Colors */
+.primary
+{
+    color: var(--primary);
+}
+.primaryweak
+{
+    color: var(--primaryweak);
+}
+.primaryweaker
+{
+    color: var(--primaryweaker);
+}
+.primaryweakest
+{
+    color: var(--primaryweakest);
+}
+.white
+{
+    color: var(--white);
+}
+.light
+{
+    color: var(--light);
+}
+
+/* Flex */
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Navbar Override*/
+#sidebar
+{
+    background-color: var(--primary);
+    max-width: 300px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+#sidebar h1
+{
+    font-size: 2.1rem;
+    margin-bottom: 0;
+}
+
+/* Spans */
+.elementalspan
+{
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.elementalyellow
+{
+    border-bottom: 2px solid var(--light);
+}
+.elementalblue
+{
+    border-bottom: 2px solid var(--water);
+}
+.elementalred
+{
+    border-bottom: 2px solid var(--fire);
+}
+.elementalgreen
+{
+    border-bottom: 2px solid var(--grass);
+}
+.elementalpurple
+{
+    border-bottom: 2px solid var(--chaos);
+}
+
+.levelspan
+{
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+.level6
+{
+    border-bottom: 2px solid white;
+}
+.level5
+{
+    border-bottom: 2px solid var(--light);
+}
+.level4
+{
+    border-bottom: 2px solid var(--chaos);
+}
+.level3
+{
+    border-bottom: 2px solid var(--primary);
+}
+.level2
+{
+    border-bottom: 2px solid var(--primary);
+}
+
+.character-tags
+{
+    box-sizing: border-box;
+    padding: 2px 10px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primaryweak);
+    border-radius: 15px;
+}
+
+/* Stat Table */
+.stat-table  
+{
+    border-collapse:collapse;
+    border-spacing:0;
+    width: 100%;
+    color: var(--white);
+}
+
+.stat-table-cell-main, .stat-table-cell, .stat-table-cell-alternating
+{
+    border-color:var(--white);
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+    width: 11%;
+    font-size: 0.9rem;
+}
+
+.stat-table-cell, .stat-table-cell-alternating
+{
+    text-align: center;
+}
+
+.stat-table-header, .stat-table-header-secondary
+{
+    border-color:var(--white);
+    padding:10px 5px;
+    word-break:normal;
+    text-align: center;
+}
+
+.stat-table-header
+{
+    background-color: var(--primary);
+}
+
+.stat-table-header-secondary, .stat-table-cell-main
+{
+    background-color: var(--primaryweak);
+    color: var(--white);
+}
+
+.stat-table-cell-alternating
+{
+    background-color: var(--primary);
+    color: var(--primaryweakest);
+}
+
+.stat-increase
+{
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+
+/* Others */
+.profilepicture
+{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: 0 0;
+    background-color: var(--primaryweaker);
+    border-radius: 25px;
+}
+
+.devbox
+{
+    text-align: center;
+    background-color: var(--primary);
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: var(--white);
+    border-radius: 25px;
+}
+
+.devbox-subtitle
+{
+    text-align: center;
+    color: var(--primaryweakest);
+}
+
+#overview
+{
+    margin-bottom: 50px;
+    box-sizing: border-box;
+}
+
+#personaldata
+{
+    box-sizing: none;
+}
+
+.subheading
+{
+    color: var(--white);
+    text-decoration:solid;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.subheading-line
+{
+    border-top: 5px solid var(--white);
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+.databox
+{
+    background-color: var(--primaryweaker);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.skillbox
+{
+    background-color: var(--primaryweak);
+    min-height: 20svh;
+    height: 100%;
+}
+

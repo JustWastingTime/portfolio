@@ -1,0 +1,370 @@
+<html>
+  <head>
+    <title>Into the Holoverse Autobattler</title>
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="../main.css" />
+    
+  </head>
+  <body>
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+        <div class="p-4 pt-5">
+          <h1 class="white">HoLoverse Autobattler</h1>
+          <p class="white">Internal Wiki</p>
+          <ul class="list-unstyled components mb-5">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li>
+              <a href="../characters.html">Characters</a>
+            </li>
+            <li>
+                <a href="../enemies.html">Enemies</a>
+            </li>
+            <li>
+                <a href="../equipments.html">Equipments</a>
+              </li>
+
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Page Content-->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <!-- Overview-->
+        <div class="row" id="overview">
+            <div class="col-2">
+                <img src="../Images/TokinoSora.png" class="profilepicture">
+            </div>
+            <div class="col-6 flex-col">
+                <h1 class="white"><b>Tokino Sora</b></h1>
+                <div> 
+                    <span class="elementalspan elementalyellow"><img src="../Images/Element Yellow.png"> Light</span>
+                    <span class="levelspan level5">5 ✦</span>
+                </div>
+                
+                
+                <p class=""></p>
+            </div>
+            <div class="col-4">
+                <div class="row" style="height: 100%">
+                    <div class="col-4 flex-col">
+                        <p class="devbox">✔</p>
+                        <p class="devbox-subtitle">Kit Completed</p>
+                    </div>
+                    <div class="col-4 flex-col">
+                        <p class="devbox">-</p>
+                        <p class="devbox-subtitle">Implemented</p>
+                    </div>
+                    <div class="col-4 flex-col">
+                        <p class="devbox">-</p>
+                        <p class="devbox-subtitle">Released</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Personal Data & Stats -->
+        <div class="row" id="personaldata" style="padding: 10px;">
+            
+            <div class="col-4 white flex-col" style="justify-content: space-between">
+                <div class="row">
+                    <div class="databox">
+                        <h2 class="subheading">Data</h2>
+                        <hr class="subheading-line">
+                        <div class="row">
+                            <div class="col-3"> ID</div>
+                            <div class="col-2"> </div>
+                            <div class="col-7"> 001</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"> Faction</div>
+                            <div class="col-2"> </div>
+                            <div class="col-7"> Human</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"> Grouping</div>
+                            <div class="col-2"> </div>
+                            <div class="col-7"> Hololive JP</div>
+                        </div>
+                        <div class="row white">
+                            <div class="col-3"> Tags</div>
+                            <div class="col-2"> </div>
+                            <div class="col-7"> 
+                                <span class="character-tags">DPS</span>
+                                <span class="character-tags">Buffer</span>
+                                <span class="character-tags">Gen 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="databox">
+                        <h2 class="subheading">Ascension</h2>
+                        <hr class="subheading-line">
+                        <div class="row">
+                            <div class="col-1"> I</div>
+                            <div class="col-1"> </div>
+                            <div class="col-10"> When entering the battle, apply a 10% Attack increase permanently.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1"> II</div>
+                            <div class="col-1"> </div>
+                            <div class="col-10"> Outgoing damage dealt is increased by 8%</div>
+                        </div>
+                        <div class="row white">
+                            <div class="col-1"> III</div>
+                            <div class="col-1"> </div>
+                            <div class="col-10"> When entering the battle, apply 1 stack of <span class="light">Guard Up</span> to all allies.</div>
+                        </div>
+
+                        <br>
+
+                        <div class="row white">
+                            <p><span class="light">Guard Up: </span> Incoming damage taken reduced by 25% (-1 stack after trigger).</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-8 white">
+                <div class="databox">
+                    <h2 class="subheading">Stats</h2>
+                    <hr class="subheading-line">
+                    <table class="stat-table">
+                        <thead>
+                          <tr>
+                            <th class="stat-table-header-secondary" rowspan="2">STAT</th>
+                            <th class="stat-table-header" colspan="2">Base</th>
+                            <th class="stat-table-header" colspan="2">Ascension I<br></th>
+                            <th class="stat-table-header" colspan="2">Ascension II</th>
+                            <th class="stat-table-header" colspan="2">Ascension III</th>
+                          </tr>
+                          <tr>
+                            <th class="stat-table-header-secondary">1</th>
+                            <th class="stat-table-header-secondary">30</th>
+                            <th class="stat-table-header-secondary">1</th>
+                            <th class="stat-table-header-secondary">40</th>
+                            <th class="stat-table-header-secondary">1</th>
+                            <th class="stat-table-header-secondary">50</th>
+                            <th class="stat-table-header-secondary">1</th>
+                            <th class="stat-table-header-secondary">60</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="stat-table-cell-main">HP</td>
+                                <td class="stat-table-cell-alternating">312 <span class="stat-increase">+4.8</span></td>
+                                <td class="stat-table-cell-alternating">451</td>
+                                <td class="stat-table-cell-alternating">493 <span class="stat-increase">+6.5</span></td>
+                                <td class="stat-table-cell-alternating">747</td>
+                                <td class="stat-table-cell-alternating">772 <span class="stat-increase">+5.4</span></td>
+                                <td class="stat-table-cell-alternating">1037</td>
+                                <td class="stat-table-cell-alternating">1122 <span class="stat-increase">+3</span></td>
+                                <td class="stat-table-cell-alternating">1299</td>
+                              </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Attack</td>
+                            <td class="stat-table-cell">224 <span class="stat-increase">+3.6</span></td>
+                            <td class="stat-table-cell">328</td>
+                            <td class="stat-table-cell">342 <span class="stat-increase">+4.5</span></td>
+                            <td class="stat-table-cell">518</td>
+                            <td class="stat-table-cell">536 <span class="stat-increase">+4.2</span></td>
+                            <td class="stat-table-cell">742</td>
+                            <td class="stat-table-cell">751 <span class="stat-increase">+2.2</span></td>
+                            <td class="stat-table-cell">881</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Defense</td>
+                            <td class="stat-table-cell-alternating">101 <span class="stat-increase">+2.5</span></td>
+                            <td class="stat-table-cell-alternating">174</td>
+                            <td class="stat-table-cell-alternating">189 <span class="stat-increase">+4.1</span></td>
+                            <td class="stat-table-cell-alternating">349</td>
+                            <td class="stat-table-cell-alternating">361 <span class="stat-increase">+2.9</span></td>
+                            <td class="stat-table-cell-alternating">503</td>
+                            <td class="stat-table-cell-alternating">512 <span class="stat-increase">+1.2</span></td>
+                            <td class="stat-table-cell-alternating">583</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Speed</td>
+                            <td class="stat-table-cell">100 <span class="stat-increase">+0.1</span></td>
+                            <td class="stat-table-cell">103</td>
+                            <td class="stat-table-cell">103 <span class="stat-increase">+0.11</span></td>
+                            <td class="stat-table-cell">107</td>
+                            <td class="stat-table-cell">108 <span class="stat-increase">+0.12</span></td>
+                            <td class="stat-table-cell">114</td>
+                            <td class="stat-table-cell">115 <span class="stat-increase">+0.04</span></td>
+                            <td class="stat-table-cell">117</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Critcal Rate</td>
+                            <td class="stat-table-cell-alternating">1% <span class="stat-increase">+0.1</span></td>
+                            <td class="stat-table-cell-alternating">3.9%</td>
+                            <td class="stat-table-cell-alternating">4% <span class="stat-increase">+0.1</span></td>
+                            <td class="stat-table-cell-alternating">7.9%</td>
+                            <td class="stat-table-cell-alternating">8% <span class="stat-increase">+0.04</span></td>
+                            <td class="stat-table-cell-alternating">9.96%</td>
+                            <td class="stat-table-cell-alternating">10% <span class="stat-increase">+0.03</span></td>
+                            <td class="stat-table-cell-alternating">11.77%</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Critical Damage</td>
+                            <td class="stat-table-cell">140% <span class="stat-increase">+0.2</span></td>
+                            <td class="stat-table-cell">145.8%</td>
+                            <td class="stat-table-cell">147% <span class="stat-increase">+0.2</span></td>
+                            <td class="stat-table-cell">154.8%</td>
+                            <td class="stat-table-cell">156% <span class="stat-increase">+0.1</span></td>
+                            <td class="stat-table-cell">160.9%</td>
+                            <td class="stat-table-cell">161% <span class="stat-increase">+0.04</span></td>
+                            <td class="stat-table-cell">163.36%</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Effect Rate</td>
+                            <td class="stat-table-cell-alternating">100% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell-alternating">100%</td>
+                            <td class="stat-table-cell-alternating">100% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell-alternating">100%</td>
+                            <td class="stat-table-cell-alternating">100% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell-alternating">100%</td>
+                            <td class="stat-table-cell-alternating">100% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell-alternating">100%</td>
+                          </tr>
+                          <tr>
+                            <td class="stat-table-cell-main">Resistance</td>
+                            <td class="stat-table-cell">5% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell">5%</td>
+                            <td class="stat-table-cell">6% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell">6%</td>
+                            <td class="stat-table-cell">7% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell">7%</td>
+                            <td class="stat-table-cell">7% <span class="stat-increase">+0</span></td>
+                            <td class="stat-table-cell">7%</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="row">
+            <div class="col-12 white">
+                <div class="databox">
+                    <h2 class="subheading">Skills</h2>
+                    <hr class="subheading-line">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-3" style="padding: 0;">
+                            <div class="databox skillbox flex-col" style="justify-content: space-between;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h4 class="skill-name white">Whack <span class="stat-increase primaryweakest">Vanguard</span></h4>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="white">5s</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="white">Deals 50% of Attack to the closest enemy</p>
+                                </div>
+                               
+                                <p class="white">Energy Gain: 30</p>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="col-3" style="padding: 0;">
+                            <div class="databox skillbox flex-col" style="justify-content: space-between;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h4 class="skill-name white">Inspire <span class="stat-increase primaryweakest">Rearguard</span></h4>
+                                        </div>
+                                        <div class="col-2">
+                                            <p class="white">8s</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="white">Applies 15% Attack buff to the unit in front. Lasts 1 turn.</p>
+                                </div>
+                                <p class="white">Energy Gain: 12</p>
+                            </div>
+                        </div>
+
+                        <div class="col-3" style="padding: 0;">
+                            <div class="databox skillbox flex-col" style="justify-content: space-between;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h4 class="skill-name white">Mega Whack <span class="stat-increase primaryweakest">Ultimate</span></h4>
+                                        </div>
+                                    </div>
+                                    
+                                    <p class="white">Deals 60% of Attack to all enemies</p>
+                                </div>
+                                <p class="white">Energy Cost: 150</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-3" style="padding: 0;">
+                            <div class="databox skillbox flex-col" style="justify-content: space-between;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h4 class="skill-name white">Daisenpai Aura <span class="stat-increase primaryweakest">Passive</span></h4>
+                                        </div>
+                                    </div>
+                                    <p class="white">When entering the battle, apply 5% Attack and Speed buff to all allies for 10 turns. Undispellable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Limit Break -->
+        <div class="row" id="limitbreak">
+            <div class="col-12">
+            <div class="databox">
+                <h2 class="subheading">Limit Break</h2>
+                <hr class="subheading-line">
+                <div class="row white">
+                    <div class="col-12"> Lv. 1: <span class=light>[Whack] </span>changes to 60% of Attack instead.</div>
+                    <div class="col-12"> Lv. 2: <span class=light>[Inspire] </span> changes to 60% of Attack instead.</div>
+                    <div class="col-12"> Lv. 3: <span class=light>[Inspire] </span> duration changes to 2 turns.</div>
+                    <div class="col-12"> Lv. 4: <span class=light>[Daisenpai Aura] </span> changes to 8% of Attack and Speed instead.</div>
+                    <div class="col-12"> Lv. 5: <span class=light>[Mega Whack] </span> changes to 70% of Attack instead. Energy Cost reduced to 120.</div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+
+  <!-- Latest compiled JavaScript -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</html>
