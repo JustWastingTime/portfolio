@@ -223,6 +223,8 @@ body
 {
     height: 200px;
     width: 200px;
+    max-height: 20svh;
+    max-width: 20svw;
     object-fit: cover;
     object-position: 0 0;
     background-color: var(--primaryweaker);
