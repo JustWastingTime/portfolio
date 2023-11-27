@@ -90,6 +90,11 @@ body
     margin-bottom: 0;
 }
 
+#sidebar ul li.active > a 
+{
+    color: var(--white);
+}
+
 /* Spans */
 .elementalspan
 {
@@ -294,16 +299,16 @@ body
     width: 200px;
     height: 200px;
     background-color: var(--primaryweaker);
-    border: 10px solid var(--white);
+    border: 10px solid var(--primary);
     border-radius: 25px;
-    margin: 8px;
+    margin: 5px;
 }
 
 .character-box:hover
 {
     background-color: var(--primaryweakest);
     cursor: pointer;
-    border: 10px solid var(--primary);
+    border: 10px solid var(--white);
     transition: 0.3s;
 }
 
@@ -321,7 +326,7 @@ body
     width: 100%;
     position: absolute;
     text-align: center;
-    bottom: 8px;
+    bottom: 2px;
     background-color: var(--primary);
     color: var(--white);
     font-weight: bold;

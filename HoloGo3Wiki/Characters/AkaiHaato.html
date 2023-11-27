@@ -26,7 +26,7 @@
             <li>
               <a href="../index.html">Home</a>
             </li>
-            <li>
+            <li class="active">
               <a href="../characters.html">Characters</a>
             </li>
             <li>
@@ -61,7 +61,7 @@
             <div class="row" style="height: 100%">
               <div class="col-4 flex-col">
                 <p class="devbox">✔</p>
-                <p class="devbox-subtitle">Kit Completed</p>
+                <p class="devbox-subtitle">Completed</p>
               </div>
               <div class="col-4 flex-col">
                 <p class="devbox">-</p>
@@ -78,7 +78,7 @@
         <!-- Personal Data & Stats -->
         <div class="row" id="personaldata" style="padding: 10px">
           <div
-            class="col-4 white flex-col"
+            class="col-12 col-xl-4 white flex-col"
             style="justify-content: space-between"
           >
             <div class="row">
@@ -105,8 +105,10 @@
                   <div class="col-2"></div>
                   <div class="col-7">
                     <span class="character-tags">DPS</span>
+                    <span class="character-tags">Healer</span>
                     <span class="character-tags">Buffer</span>
-                    <span class="character-tags">Gen 0</span>
+                    <span class="character-tags">Debuffer</span>
+                    <span class="character-tags">Gen 1</span>
                   </div>
                 </div>
               </div>
@@ -150,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="col-8 white">
+          <div class="col-12 col-xl-8 white">
             <div class="databox">
               <h2 class="subheading">Stats</h2>
               <hr class="subheading-line" />
@@ -353,23 +355,23 @@
                       <div class="row">
                         <div class="col-10">
                           <h4 class="skill-name white">
-                            Whack
+                            Sussy Cooking
                             <span class="stat-increase primaryweakest"
                               >Vanguard</span
                             >
                           </h4>
                         </div>
                         <div class="col-2">
-                          <p class="white">5s</p>
+                          <p class="white">10s</p>
                         </div>
                       </div>
 
                       <p class="white">
-                        Deals 50% of Attack to the closest enemy.
+                        Deals 30% of Max HP to a random enemy. Applies 20% RES reduction that lasts 2 turns.
                       </p>
                     </div>
 
-                    <p class="white">Energy Gain: 30</p>
+                    <p class="white">Energy Gain: 20</p>
                   </div>
                 </div>
 
@@ -382,23 +384,22 @@
                       <div class="row">
                         <div class="col-10">
                           <h4 class="skill-name white">
-                            Inspire
+                            Normal Cooking
                             <span class="stat-increase primaryweakest"
                               >Rearguard</span
                             >
                           </h4>
                         </div>
                         <div class="col-2">
-                          <p class="white">8s</p>
+                          <p class="white">10s</p>
                         </div>
                       </div>
 
                       <p class="white">
-                        Applies 15% Attack buff to the unit in front. Lasts 1
-                        turn.
+                        Heals 10% of Max HP to a random ally. Applies 1 stack of <span class="chaos"> [Iron Stomach] </span>.
                       </p>
                     </div>
-                    <p class="white">Energy Gain: 12</p>
+                    <p class="white">Energy Gain: 20</p>
                   </div>
                 </div>
 
@@ -421,7 +422,7 @@
 
                       <p class="white">Deals 60% of Attack to all enemies.</p>
                     </div>
-                    <p class="white">Energy Cost: 150</p>
+                    <p class="white">Energy Cost: 120</p>
                   </div>
                 </div>
 
@@ -434,7 +435,7 @@
                       <div class="row">
                         <div class="col-12">
                           <h4 class="skill-name white">
-                            Daisenpai Aura
+                            Strongest Idol
                             <span class="stat-increase primaryweakest"
                               >Passive</span
                             >
@@ -442,9 +443,13 @@
                         </div>
                       </div>
                       <p class="white">
-                        When entering the battle, apply 5% Attack and Speed buff
-                        to all allies for 10 turns. Undispellable.
+                        When gaining <span class="chaos"> [Iron Stomach] </span>, Akai Haato gains a 10% Max HP increase.
                       </p>
+
+                      <p>
+                        <span class="chaos">Iron Stomach: </span> Resistance +5% (can stack).
+                      </p>
+
                     </div>
                   </div>
                 </div>
