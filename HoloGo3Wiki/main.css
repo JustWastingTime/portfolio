@@ -160,6 +160,7 @@ body
     color: var(--white);
     background-color: var(--primaryweak);
     border-radius: 15px;
+    white-space: nowrap;
 }
 
 /* Stat Table */
@@ -221,8 +222,6 @@ body
 /* Others */
 .profilepicture
 {
-    max-height: 200px;
-    max-width: 200px;
     height: auto;
     width: 100%;
     object-fit: cover;
