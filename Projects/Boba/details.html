@@ -3,8 +3,11 @@
     <title>jeremy jodi's portfolio - boba</title>
     <meta name="description" content="about boba" />
     <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
-    <link rel="stylesheet" href="../../slideshow.css" />
-    <link rel="stylesheet" href="../../tabs.css" />
+    <link rel="stylesheet" href="../../tabsboba.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
@@ -172,6 +175,32 @@
         padding: 10px 10px;
         position: relative;
       }
+
+      .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      margin-left: auto;
+      margin-right: auto;
+    }
     </style>
   </head>
   <body>
@@ -271,21 +300,6 @@
           </div>
         </div>
 
-        <div class="mechanics-card">
-          <div class="mechanics-thumbnail-left">
-            <img src="menuedit.gif" alt="editing the menu" height="400px" />
-          </div>
-          <div class="mechanics-description">
-            <h2 class="p-brown">restocking</h2>
-            <p>
-              drinks are limited everyday (day? more information in the next
-              section!). players need to restock their drinks, ideally based on
-              how well they sell. for convenience, players are given the option
-              to auto-restock since cruncing numbers isn't for everybody.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -301,7 +315,7 @@
         <img src="day_flowchart.png" width="80%" class="center" />
      
         <div class="tabs">
-          <input type="radio" id="tab1" name="tab-control" checked />
+          <input type="radio" id="tab1" name="tab-control" checked/>
           <input type="radio" id="tab2" name="tab-control" />
           <input type="radio" id="tab3" name="tab-control" />
           <input type="radio" id="tab4" name="tab-control" />
@@ -324,12 +338,7 @@
                 <span>reports and journals</span></label
               >
             </li>
-            <li title="Others">
-              <label for="tab4" role="button"
-                ><br />
-                <span>minigame</span></label
-              >
-            </li>
+
           </ul>
           <div class="slider">
             <div class="indicator"></div>
@@ -382,10 +391,6 @@
                   no worries. the report system shows the daily sales and possibly other information that would give the players insight to your daily activities. analyze through sales based on drinks, hours, customer type and other variables to figure out how to maximise profits (or not).
                 </p>
 
-                <br> <br>
-                <img src="report_journal.png" width="800">
-                <br><br>
-
                 <p class="p-white">
                   to prevent players from minmaxing their menus and setups, daily events may occur that modify the playing field, providing players the opportunity to adapt and change tactics. events may include price increase in raw materials, an uptick in demand for specific tags
                 </p>
@@ -422,46 +427,33 @@
       </div>
     </section>
     <br> <br>
-    <section style="margin-top: 50svh;">
-      <div class="container">
+    <section>
+      <div class="container" style="width: 100svw;">
         <h1 class="jwt-h1 p-white">gallery</h1>
         <br> <br>
-        <div class="container">
-          <!-- Slideshow container -->
-          <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 11</div>
-              <img src="bobass1.png" style="width: 100%" />
-              <div class="text">Brainstorm Sample</div>
+           <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="bobass1.png" style="width: 50svw;">
+                <p class="p-yellow">Drink Combination List</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="bobass2.png" style="width: 50svw;">
+                <p class="p-yellow">Drink Stat List</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="bobass3.png" style="width: 50svw;">
+                <p class="p-yellow">NPC Likes Table</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="report_journal.png" style="width: 30svw;">
+                <p class="p-yellow">Report & Journal Page</p>
+              </div>
             </div>
-  
-            <div class="mySlides fade center">
-              <div class="numbertext">2 / 11</div>
-              <img src="bobass2.png" style="width: 100%" />
-              <div class="text">Recipe Stats</div>
-            </div>
-  
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 11</div>
-              <img src="bobass3.png" style="width: 100%" />
-              <div class="text">Customers and their tags</div>
-            </div>
-  
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="swiper-pagination"></div>
           </div>
-          <br />
-  
-          <!-- The dots/circles -->
-          <div style="text-align: center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
 
     <footer>
@@ -476,38 +468,19 @@
       </p>
     </footer>
   </body>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    // Next/previous controls
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
-    }
-
-    // Thumbnail image controls
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {
-        slideIndex = 1;
-      }
-      if (n < 1) {
-        slideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-    }
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   </script>
 </html>
